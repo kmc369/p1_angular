@@ -9,15 +9,21 @@ import { MovieServiceService } from '../movie-service.service';
 export class MoviesListComponent implements OnInit {
 
   service :MovieServiceService;
-  movies :Array<any> = [];
-
+  searchbyId :number;
+  movies : any;
   constructor(service :MovieServiceService) { 
+    this.searchbyId=0;
     this.service = service;
   }
     ngOnInit(): void {
-        this.service.findAll().subscribe(data => {
-          this.movies = data;
-        });
+       
+       
+    }
+
+    onChange() :void{
+      this.service.findbyId(this.searchbyId).subscribe(data =>{
+        this.movies=data;
+      });
     }
 
 }

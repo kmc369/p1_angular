@@ -18,4 +18,7 @@ constructor(http :HttpClient) {
   findAll() : Observable<any>{
     return this.http.get(environment.apiurl);
   }
+  findbyId(id :number) :Observable<any>{
+    return this.http.get(environment.apiurl + id);
+  }
 }

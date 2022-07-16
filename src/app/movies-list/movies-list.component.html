@@ -1,16 +1,13 @@
-<table>
-    <thead>
-    <tr> <th>id</th> <th>title</th> <th>actor</th>  <th>genre</th>  <th>Year</th>    </tr>
-</thead>
-    <tbody>
-        <tr *ngFor= "let movie of movies">
-            <td>{{movie.id}}</td>
-            <td>{{movie.Title}}</td>
-            <td>{{movie.Actor}}</td>
-            <td>{{movie.Genre}}</td>
-            <td>{{movie.Year}}</td>
-        </tr>
-
-
-    </tbody>
-</table>
+<input
+  type="number"
+  name="searchbyId"
+  [(ngModel)]="searchbyId"
+  (change)="onChange()"
+/>
+<section>
+  <div>ID: {{ movies.id }}</div>
+  <div>Title: {{ movies.title }}</div>
+  <div>Starring: {{ movies.actor }}</div>
+  <div>Genre: {{ movies.genre }}</div>
+  <div>Year: {{ movies.year }}</div>
+</section>
