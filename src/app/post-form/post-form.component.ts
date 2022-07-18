@@ -23,9 +23,15 @@ export class PostFormComponent implements OnInit {
 
   submit(movie :movies) :void{
     
-    this.service.update(this.movieform).subscribe(data=>{
-   
-      movieform=data;
-    })
+    this.service.update(this.movieform).subscribe(
+      data => console.log('success',data)
+
+      );
+      
+
+      
+    
+     
+  
   }
 }
