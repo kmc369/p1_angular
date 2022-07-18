@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { MoviesListComponent } from './movies-list/movies-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { FindAllComponent } from './find-all/find-all.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    MoviesListComponent
+    MoviesListComponent,
+    FindAllComponent,
+  
   ],
   imports: [
     BrowserModule,
