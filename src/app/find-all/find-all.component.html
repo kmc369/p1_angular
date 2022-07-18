@@ -1,21 +1,18 @@
 <table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Starring</th>
-      <th>Genre</th>
-      <th>Release Year</th>
-    </tr>
-  </thead>
-
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Starring</th>
+    <th>Genre</th>
+    <th>Release Year</th>
+  </tr>
   <tbody>
-    <tr *ngFor="let movie of movies">
-      <td>{{ movie.id }}</td>
-      <td>{{ movie.title }}</td>
-      <td>{{ movie.actor }}</td>
-      <td>{{ movie.genre }}</td>
-      <td>{{ movie.year }}</td>
+    <tr *ngFor="let x of movies">
+      <td>{{ x.id }}</td>
+      <td>{{ x.title }}</td>
+      <td>{{ x.actor }}</td>
+      <td>{{ x.genre }}</td>
+      <td>{{ x.year }}</td>
     </tr>
   </tbody>
 </table>
