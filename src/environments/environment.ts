@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiurl :"http://localhost:8081/P1-web/movies/",
-  findurl :"http://localhost:8081/P1-web/findAll"
+  findurl :"http://localhost:8081/P1-web/findAll",
+  posturl : "http://localhost:8081/P1-web/update"
 };
 
 /*

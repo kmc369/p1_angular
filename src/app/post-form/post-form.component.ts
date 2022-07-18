@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { movies } from '../find-all/models/movies';
+import { MovieServiceService } from '../movie-service.service';
 
 @Component({
   selector: 'app-post-form',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostFormComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  movieform :movies;
+  service :MovieServiceService;
+  
+  constructor(service :MovieServiceService) { 
+    this.movieform = new movies();
+    this.service=service;
   }
 
+  ngOnInit(): void {
+ 
+  }
+
+  submit(movie :movies) :void{
+    
+    this.service.update(this.movieform).subscribe(data=>{
+   
+      movieform=data;
+    })
+  }
 }

@@ -1,1 +1,16 @@
-<p>post-form works!</p>
+<form (ngSubmit)="submit(movieform)">
+    
+  <label for="title">Title</label>
+  <input type="text" name="title" [(ngModel)]="movieform.title" />
+
+  <label for="Lead_Actor">Starring</label>
+  <input type="text" name="Lead_Actor" [(ngModel)]="movieform.actor" />
+
+  <label for="Genre">Genre</label>
+  <input type="type" name="Genre" [(ngModel)]="movieform.genre" />
+
+  <label for="Release_Year">Release Year</label>
+  <input type="number" name="Release_Year" [(ngModel)]="movieform.year" />
+
+  <input type="submit" value="Submit" />
+</form>
