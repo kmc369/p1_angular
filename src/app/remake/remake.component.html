@@ -1,0 +1,18 @@
+<form (ngSubmit)="remake(movieRemake)">
+  <label for="movieId">ID</label>
+  <input type="number" name="movieID" [(ngModel)]="movieRemake.id" />
+
+  <label for="title">Title</label>
+  <input type="text" name="title" [(ngModel)]="movieRemake.title" />
+
+  <label for="Lead_Actor">Starring</label>
+  <input type="text" name="Lead_Actor" [(ngModel)]="movieRemake.actor" />
+
+  <label for="Genre">Genre</label>
+  <input type="type" name="Genre" [(ngModel)]="movieRemake.genre" />
+
+  <label for="Release_Year">Release Year</label>
+  <input type="number" name="Release_Year" [(ngModel)]="movieRemake.year" />
+
+  <input type="submit" value="Submit" />
+</form>

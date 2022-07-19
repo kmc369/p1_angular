@@ -9,12 +9,16 @@ import { FormsModule } from '@angular/forms';
 import { FindAllComponent } from './find-all/find-all.component';
 import { CommonModule } from "@angular/common";
 import { PostFormComponent } from './post-form/post-form.component';
+import { DeleteByIdComponent } from './delete-by-id/delete-by-id.component';
+import { RemakeComponent } from './remake/remake.component';
 @NgModule({
   declarations: [
     AppComponent,
     MoviesListComponent,
     FindAllComponent,
     PostFormComponent,
+    DeleteByIdComponent,
+    RemakeComponent,
    
   
   ],

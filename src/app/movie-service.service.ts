@@ -2,6 +2,7 @@ import { HttpClient, HttpClientModule, HttpErrorResponse } from '@angular/common
 import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { DeleteByIdComponent } from './delete-by-id/delete-by-id.component';
 import { movies } from './find-all/models/movies';
 
 @Injectable({
@@ -34,5 +35,15 @@ constructor(http :HttpClient) {
     return throwError(()=>{
       throw new Error();
     })
+
+  
+  }
+
+  DeleteById(id :number){
+      return this.http.delete(environment.deleteurl + id)
+  }
+
+  remake(movie:movies){
+    return this.http.put(environment.remakeurl,movie).pipe(catchError(this.handleError))
   }
 }

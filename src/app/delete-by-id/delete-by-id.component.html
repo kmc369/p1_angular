@@ -1,0 +1,6 @@
+<form (ngSubmit)="deleteMovie(deleteById)">
+  <label for="deleteMovie">Delete Movie</label>
+  <input type="number" name="deleteMovie" [(ngModel)]="deleteById" />
+
+  <input type="submit" value="Submit" />
+</form>
