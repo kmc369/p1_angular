@@ -14,7 +14,7 @@ export class FindAllComponent implements OnInit {
 
   service :MovieServiceService;
   movies :Array<movies> = [];
-
+ 
   constructor(service :MovieServiceService) { 
   this.service = service;
   }
@@ -26,6 +26,8 @@ export class FindAllComponent implements OnInit {
       this.movies = data;
     })
   }
+
+
 
 
 

@@ -11,6 +11,17 @@ import { CommonModule } from "@angular/common";
 import { PostFormComponent } from './post-form/post-form.component';
 import { DeleteByIdComponent } from './delete-by-id/delete-by-id.component';
 import { RemakeComponent } from './remake/remake.component';
+
+
+
+import {AccordionModule} from 'primeng/accordion';    
+import {TableModule} from 'primeng/table';
+import {InputNumberModule} from 'primeng/inputnumber';
+import { MenuItem } from 'primeng/api';
+import { MenuModule } from 'primeng/menu'
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +30,7 @@ import { RemakeComponent } from './remake/remake.component';
     PostFormComponent,
     DeleteByIdComponent,
     RemakeComponent,
+
    
   
   ],
@@ -27,10 +39,17 @@ import { RemakeComponent } from './remake/remake.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    AccordionModule,
+   InputNumberModule,
+   TableModule,
+   MenuModule,
+   InputTextModule,
+   ButtonModule,
+
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }

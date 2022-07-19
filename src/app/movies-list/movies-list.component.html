@@ -1,9 +1,13 @@
+<span class= "p-float-label">
 <input
   type="number"
   name="searchbyId"
   [(ngModel)]="searchbyId"
+  pInputText
   (change)="onChange()"
+
 />
+</span>
 <section>
   <div>ID: {{ movies.id }}</div>
   <div>Title: {{ movies.title }}</div>
@@ -11,6 +15,3 @@
   <div>Genre: {{ movies.genre }}</div>
   <div>Year: {{ movies.year }}</div>
 </section>
-
-
-
