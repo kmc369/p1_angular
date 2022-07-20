@@ -27,25 +27,38 @@
 <app-delete-by-id></app-delete-by-id> 
 
 
-<app-movies-list></app-movies-list> 
 
--->
-
-
-<p class ="byNumber">
-<app-movies-list></app-movies-list> 
+<p class="byNumber">
+  <app-movies-list></app-movies-list>
 </p>
 
-<footer class = "remake">
-<app-remake></app-remake> 
-</footer>
+<div class="remake">
+  <app-remake></app-remake>
+</div>
 
-<div class ="allmovies">
-<nav>
-    <a [routerLink]="['/find-all']">View All Movies</a>
+<nav class="allmovies">
+  <a [routerLink]="['/find-all']">View All Movies</a>
 </nav>
 <section>
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </section> 
 
+<div class="delete">
+  <app-delete-by-id></app-delete-by-id>
+</div>
+-->
+
+<div class="remake">
+  <app-remake></app-remake>
+
+  <nav>
+    <a [routerLink]="['/find-all']">View All Movies</a>
+  </nav>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</div>
+
+<div class="delete">
+  <app-delete-by-id></app-delete-by-id>
 </div>

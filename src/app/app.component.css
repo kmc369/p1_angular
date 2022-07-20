@@ -1,15 +1,25 @@
 .byNumber {
  
  text-align: left;
- font-size: 25px;
+ font-size: 20px;
  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.allmovies{
+text-align: center;
+
 }
 
 .remake {
-   
+  
+   padding-bottom: 20px;
    text-align: center;
+  
 }
 
-.allmovies{
-
+.delete{
+    text-align: right;
 }
+
+
+
+
