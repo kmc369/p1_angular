@@ -36,6 +36,16 @@
 <app-movies-list></app-movies-list> 
 </p>
 
-<p class = "remake">
+<footer class = "remake">
 <app-remake></app-remake> 
-</p>
+</footer>
+
+<div class ="allmovies">
+<nav>
+    <a [routerLink]="['/find-all']">View All Movies</a>
+</nav>
+<section>
+    <router-outlet></router-outlet>
+</section> 
+
+</div>
