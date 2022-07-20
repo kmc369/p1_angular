@@ -1,6 +1,21 @@
+<!--
 <form (ngSubmit)="deleteMovie(deleteById)">
   <label for="deleteMovie">Delete Movie</label>
   <input type="number" name="deleteMovie" [(ngModel)]="deleteById" />
 
   <input type="submit" value="Submit" />
-</form>
+</form> -->
+
+
+<span class="p-buttonset">
+  <form (ngSubmit)="deleteMovie(deleteById)">
+    <label for="deleteMovie">Delete Movie</label>
+    <input type="number" name="deleteMovie" [(ngModel)]="deleteById" />
+    <input type="submit" value="Submit" />
+
+
+    <button pButton type="button" label="Delete" icon="pi pi-trash"></button>
+  </form>
+</span>
+
+

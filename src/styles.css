@@ -1,3 +1,15 @@
-body{
-    padding: 2rem;
+.intro {
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.aang {
+  height: 100vh;
+  background-image: url("src/assets/image/nebula.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
