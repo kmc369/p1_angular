@@ -1,32 +1,6 @@
-<!---
-<div>
-<app-movies-list></app-movies-list>
+<div class="delete">
+  <app-delete-by-id></app-delete-by-id>
 </div>
-
-
-<footer>
-<app-post-form></app-post-form>
-</footer>
-
-<div>
-<app-delete-by-id></app-delete-by-id>
-</div>
-
-<nav>
-    <a [routerLink]="['/find-all']">View All Movies</a>
-</nav>
-<section>
-    <router-outlet></router-outlet>
-</section> 
-
-<app-remake></app-remake> 
-
-<app-find-all></app-find-all>
-<app-movies-list></app-movies-list> 
-
-<app-delete-by-id></app-delete-by-id> 
-
-
 
 <p class="byNumber">
   <app-movies-list></app-movies-list>
@@ -35,33 +9,12 @@
 <div class="remake">
   <app-remake></app-remake>
 </div>
-
-<nav class="allmovies">
-  <a [routerLink]="['/find-all']">View All Movies</a>
-</nav>
-<section>
-  <router-outlet></router-outlet>
-</section> 
-
-<div class="delete">
-  <app-delete-by-id></app-delete-by-id>
-</div>
-
-
-<div class="remake">
-  <app-remake></app-remake>
-
-</div>  -->
-
-<div class="delete">
-  <app-delete-by-id></app-delete-by-id>
-</div>
-
-<nav>
-  <a [routerLink]="['/find-all']">View All Movies</a> |
-  <a [routerLink]="['/post-form']">New Movie</a>
-</nav>
-<section>
-  <router-outlet></router-outlet>
-</section>
-
+<div class="links">
+    <nav>
+      <a [routerLink]="['/find-all']">View All Movies</a> |
+      <a [routerLink]="['/post-form']">New Movie</a>
+    </nav>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </div>
