@@ -17,6 +17,7 @@ export class FindAllComponent implements OnInit {
  
   constructor(service :MovieServiceService) { 
   this.service = service;
+  
   }
 
   ngOnInit(): void {

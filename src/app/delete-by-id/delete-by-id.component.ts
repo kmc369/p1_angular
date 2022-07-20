@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MovieServiceService } from '../movie-service.service';
 
 
@@ -12,8 +13,14 @@ export class DeleteByIdComponent implements OnInit {
 
   service :MovieServiceService;
   deleteById :number = 0;
+
+
+  //event binding is performing an action on the element 
+  //attribute binding is discribing how an element will look 
+  
   constructor(service :MovieServiceService) { 
      this.service = service;
+     
 
   }
 

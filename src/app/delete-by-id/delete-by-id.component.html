@@ -4,12 +4,23 @@
   <input type="number" name="deleteMovie" [(ngModel)]="deleteById" />
 
   <input type="submit" value="Submit" />
-</form> -->
+</form>
 
 <span class="p-buttonset">
   <form (ngSubmit)="deleteMovie(deleteById)">
     <label for="deleteMovie">Delete Movie</label>
     <input type="number" name="deleteMovie" [(ngModel)]="deleteById" />
     <input type="submit" value="Submit" />
+  </form>
+</span> -->
+
+
+<span class="p-buttonset">
+  <form (ngSubmit)="deleteMovie(deleteById)">
+    <label for="deleteMovie">Delete Movie</label>
+    <input pInputText type="number" name="deleteMovie" [(ngModel)]="deleteById" />
+    <input pInputText type="submit" value="Submit" />
+    
+    
   </form>
 </span>

@@ -1,18 +1,16 @@
-.remake{
-    text-align: center;
-    padding-top: 200px;;
+.remake {
+  text-align: center;
+  padding-top: 200px;
 }
 
-.delete{
-    text-align: left;
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.byNumber{
-   text-align: left;
+.link {
+  padding-top: 500px;
+  text-align: center;
 }
-
-.link{
- padding-top: 500px;
- text-align: center;
-}
-

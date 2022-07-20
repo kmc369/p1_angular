@@ -12,7 +12,7 @@
 }
 .aang {
   height: 100vh;
-  background-image: url("src/assets/image/desktop.jpeg");
+  background-image: url('src/assets/image/brown.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 }
