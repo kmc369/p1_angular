@@ -17,6 +17,8 @@ export class PostFormComponent implements OnInit {
     this.service=service;
   }
 
+  
+
   ngOnInit(): void {
  
   }

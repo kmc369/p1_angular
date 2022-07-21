@@ -1,6 +1,6 @@
 import { HttpClient, HttpClientModule, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable, throwError } from 'rxjs';
+import { catchError, Observable, tap, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { DeleteByIdComponent } from './delete-by-id/delete-by-id.component';
 import { movies } from './find-all/models/movies';
@@ -22,6 +22,12 @@ constructor(http :HttpClient) {
   this.http = http;
  
   } 
+
+  private _refreshRequired = new Subject<void>();
+
+  get refreshRequired() {
+    return this._refreshRequired  
+  }
   
 
  
@@ -51,6 +57,11 @@ constructor(http :HttpClient) {
   }
 
   remake(movie:movies){
-    return this.http.put(environment.remakeurl,movie).pipe(catchError(this.handleError))
-  }
-}
+    return this.http.put(environment.remakeurl,movie).pipe(
+      tap(()=> {
+        this.refreshRequired.next();
+         catchError(this.handleError)
+      }));
+    }
+    }
+  

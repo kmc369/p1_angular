@@ -1,25 +1,17 @@
-<!--<div class="delete">
-  <app-delete-by-id></app-delete-by-id>
-</div>
-
-<p class="byNumber">
-  <app-movies-list></app-movies-list>
-</p> -->
-
+\
 <div class="flex">
-<div><app-delete-by-id></app-delete-by-id></div>
-<div><app-movies-list></app-movies-list></div>
-
+  <div><app-delete-by-id></app-delete-by-id></div>
+  <div><app-movies-list></app-movies-list></div>
 </div>
 <div class="remake">
   <app-remake></app-remake>
 </div>
 <div class="links">
-    <nav>
-      <a [routerLink]="['/find-all']">View All Movies</a> |
-      <a [routerLink]="['/post-form']">New Movie</a>
-    </nav>
-    <section>
-      <router-outlet></router-outlet>
-    </section>
-  </div>
+  <nav>
+    <a [routerLink]="['/find-all']">View All Movies</a> |
+    <a [routerLink]="['/post-form']">New Movie</a>
+  </nav>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</div>

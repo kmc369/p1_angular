@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment';
 import { MovieServiceService } from '../movie-service.service';
 import { movies } from './models/movies';
 import { CommonModule } from "@angular/common";
+
 @Component({
   selector: 'app-find-all',
   templateUrl: './find-all.component.html',
@@ -23,7 +24,7 @@ export class FindAllComponent implements OnInit {
   ngOnInit(): void {
     
    
-    this.service.findAll().subscribe(data => {
+      this.service.findAll().subscribe(data => {
       this.movies = data;
     })
   }

@@ -21,6 +21,7 @@ import { MenuItem } from 'primeng/api';
 import { MenuModule } from 'primeng/menu'
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ButtonModule } from 'primeng/button';
     PostFormComponent,
     DeleteByIdComponent,
     RemakeComponent,
+    TestComponent,
 
    
   
