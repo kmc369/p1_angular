@@ -14,13 +14,19 @@
   </form>
 </span> -->
 
-
 <span class="p-buttonset">
-  <form (ngSubmit)="deleteMovie(deleteById)">
+  <form
+    (ngSubmit)="deleteMovie(deleteById); deletebyid.reset()"
+    id="delete-by-id"
+    #deletebyid
+  >
     <label for="deleteMovie">Delete Movie</label>
-    <input pInputText type="number" name="deleteMovie" [(ngModel)]="deleteById" />
+    <input
+      pInputText
+      type="number"
+      name="deleteMovie"
+      [(ngModel)]="deleteById"
+    />
     <input pInputText type="submit" value="Submit" />
-    
-    
   </form>
 </span>

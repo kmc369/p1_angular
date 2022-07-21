@@ -12,6 +12,9 @@ export class RemakeComponent implements OnInit {
   movieRemake :movies;
   service :MovieServiceService;
   
+
+  
+
   constructor(service :MovieServiceService) {
     this.service = service;
     this.movieRemake = new movies();

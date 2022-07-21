@@ -15,7 +15,7 @@ export class DeleteByIdComponent implements OnInit {
 
   service :MovieServiceService;
   deleteById :number = 0;
-  placeHolder: number =0;
+  placeHolder: number = 0;
   //event binding is performing an action on the element 
   //attribute binding is discribing how an element will look 
   
