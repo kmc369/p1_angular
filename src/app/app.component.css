@@ -14,3 +14,12 @@
   padding-top: 500px;
   text-align: center;
 }
+
+.update{
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-style:solid;
+
+}
