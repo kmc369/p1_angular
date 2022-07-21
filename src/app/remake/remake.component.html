@@ -1,4 +1,6 @@
-<form (ngSubmit)="remake(movieRemake)">
+<form (ngSubmit)="remakeForm(movieRemake);remake.reset()" id="remake" #remake> 
+
+  
   <label for="movieId">ID</label>
   <input pInputText type="number" name="movieID" [(ngModel)]="movieRemake.id" />
 
@@ -6,14 +8,23 @@
   <input pInputText type="text" name="title" [(ngModel)]="movieRemake.title" />
 
   <label for="Lead_Actor">Starring</label>
-  <input pInputText type="text" name="Lead_Actor" [(ngModel)]="movieRemake.actor" />
+  <input
+    pInputText
+    type="text"
+    name="Lead_Actor"
+    [(ngModel)]="movieRemake.actor"
+  />
 
   <label for="Genre">Genre</label>
   <input pInputText type="type" name="Genre" [(ngModel)]="movieRemake.genre" />
 
   <label for="Release_Year">Release Year</label>
-  <input pInputText type="number" name="Release_Year" [(ngModel)]="movieRemake.year" />
+  <input
+    pInputText
+    type="number"
+    name="Release_Year"
+    [(ngModel)]="movieRemake.year"
+  />
 
- 
-  <input pInputText type="submit" value="Submit"  (click)="remake(movieRemake)"/>
+  <input pInputText type="submit" value="Submit" />
 </form>

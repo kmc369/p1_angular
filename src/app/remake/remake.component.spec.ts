@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { FormsModule } from '@angular/forms';
 import { RemakeComponent } from './remake.component';
 
 describe('RemakeComponent', () => {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { movies } from '../find-all/models/movies';
 import { MovieServiceService } from '../movie-service.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-post-form',
@@ -25,15 +26,9 @@ export class PostFormComponent implements OnInit {
 
   submit(movie :movies) :void{
     
-    this.service.update(this.movieform).subscribe(
-      data => console.log('success',data)
-
-      );
+    this.service.update(movie).subscribe(data => {
+      console.log(data)
       
-
-      
-    
-     
-  
-  }
+  })
+}
 }

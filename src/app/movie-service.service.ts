@@ -5,7 +5,8 @@ import { environment } from 'src/environments/environment';
 import { DeleteByIdComponent } from './delete-by-id/delete-by-id.component';
 import { movies } from './find-all/models/movies';
 import { observable, Subject } from 'rxjs';
-
+import { RemakeComponent } from './remake/remake.component';
+import { PostFormComponent } from './post-form/post-form.component';
 
 @Injectable({
   providedIn: 'root'
