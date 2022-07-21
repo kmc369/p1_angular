@@ -1,18 +1,10 @@
-.intro {
-  text-align: center;
-  padding-top: 50px;
-  font-size: 80px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:black;
-  
-}
 * {
   margin: 0;
   padding: 0;
 }
 .aang {
   height: 100vh;
-  background-image: url('src/assets/image/brown.jpeg');
+  background-image: url("src/assets/image/brown.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
